@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <STYLE>
+    thead tr{
+        background-color: rgb(48, 48, 116);
+        color: aqua;
+    }
+    tr,th{padding: 10px;
+
+    }
+    th:hover{
+        background-color: black;
+        color: aquamarine;
+    }
+    th{
+        text-align: center;
+    }
+    </STYLE>
+</head>
+<body>
+    <table border="1px" >
+<thead>
+    <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>City</th>
+        <th>Country</th>
+    </tr>
+</thead>
+
+
+<tbody>
+    <tr>
+        <th>Arham</th>
+        <th>arhammirza123@gmail.com</th>
+        <th rowspan="2">Karachi</th>
+        <th>Pakistan</th>
+    </tr>
+    <tr>
+        <th>Haris</th>
+        <th>haris10@gmail.com</th>
+        <!-- <th>Lahore</th> -->
+        <th>Pakistan</th>
+    </tr>
+    <th colspan="4">END</th>
+
+</tbody>
+
+
+    </table>
+</body>
+</html>
