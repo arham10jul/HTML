@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+//Conditional Statement
+
+var age= prompt("enter your age");
+
+if (age>=18){
+
+    document.write("Eligible");
+
+}
+    
+else{
+document.write("Not Eligible");
+}
+
+    </script> -->
+    <label for="">Name</label>
+    <input type="text" id="n">
+    <button type="submit" onclick="val()">Submit</button>
+    <div id="abc"></div>
+
+    <script>
+
+function val(){
+
+    var a=document.getElementById("n").value;
+    if(a>=18)
+    document.getElementById("abc").innerHTML="Eligible";
+
+    else{
+document.getElementById("abc").innerHTML="Not Eligible";    
+
+
+    }
+
+
+}
+    </script>
+
+
+ 
+</body>
+</html>

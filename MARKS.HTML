@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="Result"></div>
+<li id="L11"></li>
+<li id="L12"></li>
+<li id="L13"></li>
+<li id="L14"></li>
+<div id="sum"></div>
+<div id="result"></div>
+
+        <script>
+var Physics=parseInt(prompt("enter Physics marks"));
+var Chemistry=parseInt(prompt("enter Chemistry marks"));
+var Math=parseInt(prompt("enter Math marks"));
+var Urdu=parseInt(prompt("enter urdu marks"));
+
+
+document.getElementById("L11").innerHTML=Physics;
+document.getElementById("L12").innerHTML=Chemistry;
+document.getElementById("L13").innerHTML=Math;      
+document.getElementById("L14").innerHTML=Urdu;
+
+var sum=Chemistry+Math+Physics+Urdu;
+var per=(sum/700)*100;
+document.getElementById("sum").innerHTML=per;
+
+        </script>
+</body>
+</html>
