@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <label for="">Physics</label>
+   <input type="text" id="phy">
+   <br>
+
+   <label for="">Chemistry</label>
+   <input type="text" id="che">
+   <br>
+
+   <label for="">Math</label>
+   <input type="text" id="math">
+   <br>
+
+   <label for="">English</label>
+   <input type="text" id="eng">
+   <br>
+
+   <label for="">Urdu</label>
+   <input type="text" id="urdu">
+   <br>
+
+   <br>
+   <button type="Submit" onclick="res()">Submit</button>
+   <div id="Demo"></div>
+
+
+   <script>
+function res(){
+
+
+
+    var p=parseInt(document.getElementById("phy").value);
+    var c=parseInt(document.getElementById("che").value);
+    var m=parseInt(document.getElementById("math").value);
+    var e=parseInt(document.getElementById("eng").value);
+    var u=parseInt(document.getElementById("urdu").value);
+    var ob=p+c+m+e+u; 
+    var per=(ob/700)*100;
+
+
+    if(per>=80){
+        document.getElementById("Demo").innerHTML="Physics =" + p +"<br> Chemistry" + c + "<br> Math" + m + "<br> English" + e + "<br> Urdu" + u +  "<br> Obtain" + ob + " <br> Percentage " + per + " <br> Grade   A+";
+    }
+    else if(per>=70 && per<80){
+        document.getElementById("Demo").innerHTML="Physics =" + p +"<br> Chemistry" + c + "<br> Math" + m + "<br> English" + e + "<br> Urdu" + u +  "<br> Obtain" + ob + " <br> Percentage " + per + " <br> Grade   A";
+    }
+    else if(per>=60 && per<70){
+        document.getElementById("Demo").innerHTML="Physics =" + p +"<br> Chemistry" + c + "<br> Math" + m + "<br> English" + e + "<br> Urdu" + u +  "<br> Obtain" + ob + " <br> Percentage " + per + " <br> Grade   B";
+
+    }
+    else if(per>=50 && per<60){
+        document.getElementById("Demo").innerHTML="Physics =" + p +"<br> Chemistry" + c + "<br> Math" + m + "<br> English" + e + "<br> Urdu" + u +  "<br> Obtain" + ob + " <br> Percentage " + per + " <br> Grade   C";  
+    }
+    else{
+        document.getElementById("Demo").innerHTML="Physics =" + p +"<br> Chemistry" + c + "<br> Math" + m + "<br> English" + e + "<br> Urdu" + u +  "<br> Obtain" + ob + " <br> Percentage " + per + " <br> Grade   fail";  
+    }
+
+
+
+}
+
+   </script>
+
+
+
+  
+</body>
+</html> 
