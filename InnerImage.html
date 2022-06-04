@@ -51,21 +51,27 @@
 <body>
     <div class="container">
         <div class="d1">
-            <img src="avengers.jpg" alt="Avengers" height="400px" width="440px">
+            <img src="avengers.jpg" alt="Avengers" height="400px" width="440px" id="main">
         </div>
         <div class="d2">
             <div class="d11">
-                <img src="thor.jpg" alt="Thor" height="150px" width="120px">
+                <img src="thor.jpg" onclick="ch(this.src)" alt="Thor" height="150px" width="120px">
             </div>
             <div class="d22">
-                <img src="wanda.jpg" alt="Scarlet Witch" height="150px" width="120px">
+                <img src="wanda.jpg"  onclick="ch(this.src)" alt="Scarlet Witch" height="150px" width="120px">
             </div>
             <div class="d33">
-                <img src="loki.jpg" alt="Loki" height="150px" width="120px">
+                <img src="loki.jpg"  onclick="ch(this.src)" alt="Loki" height="150px" width="120px">
             </div>
         </div>
        
         
     </div>
+
+    <script>
+        function ch(ab){
+            document.getElementById("main").src=ab;
+        }
+    </script>
 </body>
 </html>
