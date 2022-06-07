@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <label for="">Numbers</label>
+        <input type="text" id="n">
+        <button type="submit" onclick="abc()">Submit</button>
+        <div id="demo"></div>
+
+
+        <script>
+function abc(){
+    var a=document.getElementById("n").value;
+    if(a % 2 ==0){
+        document.getElementById("demo").innerHTML = "your number is even";
+
+
+    }
+    else{
+        document.getElementById("demo").innerHTML = "your number is odd";
+    }
+}
+
+        </script>
+
+</body>
+</html>
