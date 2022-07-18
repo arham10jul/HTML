@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions With Events</title>
+</head>
+<body>
+    <!-- <label for="">Name</label>
+    <input type="text" id="name">
+    <button type="Submit" onclick="val()">Submit</button>
+    <div id="demo"></div> -->
+    <label for="">numbers</label>
+    <input type="number" id="n">
+    <button type="submit" onclick="val()">submit</button>
+    <div id="abc"></div>
+
+    <script>
+        // function sq(){
+        //     var n=10;`
+        //     document.write(n*n);
+
+
+        // }
+
+
+    function val(){
+        // var n=document.getElementById("name").value;
+        // document.getElementById("demo").innerHTML=n;
+        // document.getElementById("name").value="";
+        var a= document.getElementById("n").value;
+        var b=(a/700)*100;
+        document.getElementById("abc").innerHTML=b;
+
+
+
+    }
+
+
+
+
+
+
+    </script>
+</body>
+</html>

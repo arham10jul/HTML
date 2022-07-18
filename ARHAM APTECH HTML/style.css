@@ -1,0 +1,53 @@
+ul{
+
+}
+li{
+   display: inline;
+   padding: 20px;
+}
+   a:link{
+       color:red;
+   }
+   a:visited{
+       color: yellow;
+   }
+   a:hover{
+       color: aqua;
+   }
+
+   a:active{
+       color: blue;
+   }
+   p::first-letter{
+       font-size: 30px;
+       color: blue;
+   }
+       P::first-line{
+           color: blue;
+
+       }
+       span{
+           color: brown;
+       }
+       P{
+           text-indent:100px;
+       }
+       h1{
+         text-transform: uppercase;
+         word-spacing: 30px;
+         letter-spacing: 30px;
+
+       }
+       P{
+          text-align: justify; 
+          font-size: 30px;
+          padding: 50px;background-color: aquamarine;
+          border-top-style: dashed;
+          border-left: 10px solid black;
+          border-right: 10px dashed maroon;
+          border-top: 10px solid red;
+          border-bottom: 10px solid yellowgreen; 
+          border: 10px solid red;
+
+       }
+       

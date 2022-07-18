@@ -1,0 +1,39 @@
+.main{
+    height: 1000px;
+background-image: linear-gradient(to top right , rgb(52,52,93),black)  
+}
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+ul{
+
+}
+li{
+    display: inline;
+    padding: 20px;
+    color: white;
+}
+a:link{
+    color: white;
+}
+a:hover{
+    color: red;
+}
+a:active{
+    color: blue;
+}
+p::first-letter{
+    font-size: 30px;
+    color: blue;
+}
+    h1{
+      text-transform: uppercase;
+      word-spacing: 10px;
+      letter-spacing: 20px;
+      color: white;
+
+    }
+
+   
