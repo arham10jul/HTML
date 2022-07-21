@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery First Lecture</title>
+
+    <script src="jquery-3.5.1.js"></script>
+    
+</head>
+<body>
+    <button class="h">hide</button>
+    <button class="s">show</button>
+    <button class="fi">fade in</button>
+    <button class="fo">fade out</button>
+    <button class="su">slide up</button>
+    <button class="sd">slide down</button>
+    <button class="ft">fade toggle</button>
+    <button class="st">slide toggle</button>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex est labore cupiditate error iusto officiis, ipsa adipisci accusantium! Et explicabo quia excepturi nulla corrupti, neque at soluta esse officiis reiciendis?</p>
+
+
+    <script>
+$(document).ready(function(){
+
+
+    $('.h').click(function(){
+        $('p').hide();
+    });
+
+
+    $('.s').click(function(){
+        $('p').show();
+    })
+
+
+    $('.fi').click(function(){
+        $('p').fadeIn();
+
+    })
+    
+    $('.fo').click(function(){
+        $('p').fadeOut();
+    })
+
+    $('.su').click(function(){
+        $('p').slideUp();
+    })
+
+    $('.sd').click(function(){
+        $('p').slideDown();
+    })
+
+    $('.ft').click(function(){
+        $('p').fadeToggle();
+
+    })
+
+    $('.st').click(function(){
+        $('p').slideToggle();
+
+
+    })
+
+
+})
+
+    </script>
+    
+</body>
+</html>
